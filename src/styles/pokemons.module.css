@@ -1,0 +1,62 @@
+.list {
+  height: 81vh;
+  width: 40vw;
+  background-color: rgb(248, 248, 248);
+  margin-top: 1.2%;
+  display: flex;
+  justify-content: left;
+
+  float: right;
+
+  border: 7.6px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  box-shadow: inset 6em 0em rgb(232, 48, 48), inset 6.5em 0em rgb(248, 152, 160);
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  padding-left: 1%;
+  padding-right: 4%;
+}
+
+li {
+  width: 100%;
+  font-size: 70px;
+  color: rgb(88, 88, 80);
+  text-shadow: 2px 2px rgb(168, 184, 184);
+
+  border: 7.6px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 10px;
+
+  padding: 5px;
+}
+
+li:hover {
+  box-shadow: 0 0 0 3px rgb(248, 248, 248), 0 0 0 10px rgb(232, 48, 48),
+    0 0 0 13px rgb(248, 248, 248);
+  cursor: pointer;
+}
+
+li img {
+  height: 45px;
+  margin-right: 12.5%;
+  margin-left: 0.75%;
+}
+
+li span {
+  margin-right: 5%;
+}

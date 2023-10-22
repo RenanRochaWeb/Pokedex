@@ -1,0 +1,21 @@
+.header {
+  height: 11.4vh;
+  width: 99.25vw;
+  background-image: linear-gradient(
+    rgb(232, 48, 48),
+    rgb(192, 32, 40),
+    rgb(144, 16, 32)
+  );
+
+  border: 7.6px;
+  border-style: solid;
+  border-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 80px;
+  color: white;
+  text-shadow: 4px 4px black;
+}
