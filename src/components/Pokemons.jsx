@@ -39,5 +39,3 @@ export default function Pokemons({ updateData }) {
     </div>
   );
 }
-
-//add click event for the logo and li

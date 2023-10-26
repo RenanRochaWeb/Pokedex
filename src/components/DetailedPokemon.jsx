@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import classes from "../styles/detailedPokemon.module.css";
 import missingNo from "../sprites/0.png";
-import pokeballBack from "../sprites/pokeball_back_edit.png";
 
 export default function DetailedPokemon({ data }) {
   const [baseInfo, setBaseInfo] = useState(data || "");
@@ -34,17 +33,15 @@ export default function DetailedPokemon({ data }) {
     <div className={classes.info}>
       <div className={classes.name}>
         <div className={classes.innerBorder}>
-          {baseInfo && baseInfo.capName}
+          {(baseInfo && baseInfo.capName) || "MissingNo"}
         </div>
       </div>
       <div className={classes.background}>{sprite}</div>
       <div className={classes.details}>
         <div className={classes.innerBorder}>
-          {detailedInfo &&
-            detailedInfo.flavor_text_entries[0].flavor_text.replaceAll(
-              "\f",
-              " "
-            )}
+          {detailedInfo?.flavor_text_entries
+            ?.find((i) => i.language.name === "en")
+            ?.flavor_text?.replaceAll("\f", " ") || "No details yet"}
         </div>
       </div>
     </div>
